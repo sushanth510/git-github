@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Data Types</h2>
+<p>The typeof operator returns the type of a variable or an expression.</p>
+
+<p id="dataTypes"></p>
+<h2>Strings</h32>
+<p id="string"></p>
+
+
+
+<script>
+var a=1,b="nani",c=21.2,d={"a":2,"b":3 },e=[1,2,3],f=null,g,h=10==10,i=function myfunc(){};
+document.getElementById("dataTypes").innerHTML = 
+typeof a + "<br>" + 
+typeof b + "<br>" +
+typeof c + "<br>" +
+typeof d + "<br>" +
+typeof e + "<br>"+
+typeof f + "<br>"+
+typeof g + "<br>"+
+typeof h + "<br>"+
+typeof i ;
+var y = new String("John");
+var str = "Please locate where 'locate' occurs!";
+var pos1 = str.indexOf("locate");
+var pos2 = str.lastIndexOf("locate");
+document.getElementById("string").innerHTML=
+"string length " + "nani".length + "<br>" +
+"escape charcter \"" +"<br>"+
+'escape charcter \'' + "<br>"+
+"escape character \\"+"<br>"+
+"string as object " + typeof y;
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
