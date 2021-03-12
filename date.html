@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <p>date</p>
+        <p id="date"></p>
+    </body>
+    <script>
+        var d=new Date()
+        var d1=new Date(2001,07,20,20,20,59,0)
+        var d2=new Date("aug 2001 20")
+        document.getElementById("date").innerHTML=
+        d+"<br>"+d1+"<br>"+d2+"<br>"
+        +d.getFullYear()+"<br>"
+        +d.getMonth()+"<br>"
+        +d.getDate()+"<br>"
+        +d.getDay()+"<br>"
+        +d.getTime()+"<br>"
+        +d.getHours()+"<br>"
+        +d.getMinutes()+"<br>"
+        +d.getSeconds()+"<br>"
+        +d.getMilliseconds()+"<br>"
+        +d.getFullYear()+"<br>"
+    </script>
+</html>

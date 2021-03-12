@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>For Loop</h2>
+
+<p id="for"></p>
+<h2>For in</h2>
+<p id="forin"></p>
+<h2>For Each</h2>
+<p id="forEach"></p>
+<h2>For of</h2>
+<p id="demo"></p>
+
+
+<script>
+var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+var text = "";
+var i;
+for (i = 0; i < cars.length; i++) {
+  text += cars[i] + " ";
+}
+document.getElementById("for").innerHTML = text;
+var txt = "";
+var person = {fname:"John", lname:"Doe", age:25}; 
+var x;
+for (x in person) {
+  txt += person[x] + " ";
+}
+document.getElementById("forin").innerHTML = txt;
+
+var txt = "";
+var numbers = [45, 4, 9, 16, 25];
+numbers.forEach(myFunction);
+document.getElementById("forEach").innerHTML = txt;
+
+function myFunction(value) {
+  txt = txt + value + " "; 
+}
+
+
+let cars1 = ["BMW", "Volvo", "Mini"];
+let text1 = "";
+
+for (let x1 of cars1) {
+  text1 += x1 + " ";
+}
+
+document.getElementById("demo").innerHTML = text1;
+</script>
+</script>
+
+</body>
+</html>
